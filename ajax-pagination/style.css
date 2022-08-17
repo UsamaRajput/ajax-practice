@@ -1,0 +1,48 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+.container{
+	width: 600px;
+	min-height: 100vh;
+	background: #eee;
+	margin: 0 auto;
+}
+.container header{
+	padding: 30px;
+	text-align: center;
+	background: #15c315;
+}
+section{
+	width: 100%;
+}
+section table{
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 20px;
+}
+section table tr th,section table tr td{
+	border: 1px solid #15c315;
+	padding: 10px;
+	text-align: center;
+}
+section .pagination{
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+	padding-bottom: 20px;
+}
+section .pagination a{
+	border: 1px solid #eee;
+	background: #15c315;
+	border-radius: 5px;
+	padding: 5px 10px;
+	text-decoration: none;
+	color: white;
+}
+section .pagination a.active{
+	background: #0e51b5;
+}

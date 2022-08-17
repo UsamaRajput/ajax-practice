@@ -1,0 +1,112 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+.container{
+	width: 600px;
+	background: #eee;
+	min-height: 100vh;
+	margin: 0 auto;
+	position: relative;
+}
+header{
+	width: 100%;
+	background: lightpink;
+	text-align: center;
+	padding: 20px;
+}
+header h1{
+	color: #fff;
+	padding-bottom: 10px;
+}
+nav{
+	width: 100%;
+	padding: 20px;
+	text-align: center;
+	border: 2px solid #c22121;
+}
+nav button{
+	padding:10px;
+	border: none;
+	background: lightpink;
+	font-weight: bold;
+	color: white;
+	cursor: pointer;
+}
+
+section{
+	width: 100%;
+	margin-top: 20px;
+
+}
+section table {width: 100%; border-collapse: collapse;}
+section table tr th{
+	border: 2px solid pink;
+	padding: 10px;
+}
+section table tr td{
+	border: 2px solid gray;
+	padding: 10px;
+	text-align: center;
+}
+.error-message{
+	display: none;
+	position: absolute;
+	margin: 30px;
+	padding: 10px;
+	right: 20px;
+	top: 20px;
+	background: red;
+	z-index: 4;
+	color: white;
+}
+.success-message{
+	display: none;
+	position: absolute;
+	margin: 30px;
+	padding: 10px;
+	right: 20px;
+	top: 20px;
+	background: green;
+	z-index: 4;
+	color: white;
+}
+
+.popup{
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	position: fixed;
+	background: rgba(0,0,0,0.2);
+	top: 0;
+	left: 0;
+	display: none;
+}
+.popup-box{
+	background: #fff;
+	width: 30%;
+	top: 20%;
+	left: calc(50% - 15%);
+	position: relative;
+	text-align: center;
+}
+.popup-box h1{
+	padding-bottom: 20px;
+	border-bottom: 1px solid black; 
+}
+.popup-box .close-popup{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	background: red;
+	border: 1px solid gray;
+	border-radius: 50%;
+	top: -15px;
+	right: -15px;
+	line-height: 30px;
+	color: white;
+	cursor: pointer;
+}
